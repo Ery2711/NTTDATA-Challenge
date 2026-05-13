@@ -1,0 +1,27 @@
+PROYECTO DE AUTOMATIZACION PARA EJERCICIO FRONTEND
+
+1. ARQUITECTURA BASE
+
+	- Framework: Playwright con motor Playwright-BDD.
+	- Lenguaje: JavaScript (Node.js).
+	- Enfoque: BDD (Behavior Driven Development) mediante archivos .feature (Gherkin).
+
+2. PATRONES DE DISEÑO IMPLEMENTADOS
+
+	- Page Object Model (POM): Las páginas (LoginPage, HomePage, CartPage) se encapsulan en clases de JS. Separa los selectores (locators) de la lógica de los pasos.
+
+	- Step Definitions: Archivos puente que traducen el lenguaje natural a código ejecutable. Uso de funciones asíncronas con inyección del fixture { page } para control del navegador.
+
+	- Data-Driven Testing (DDT): Uso de "Scenario Outline" y tablas de "Examples" en Gherkin. Permite ejecutar un mismo flujo con múltiples juegos de datos (ej. pruebas de errores en formulario).
+
+3. ESTRATEGIA DE PRUEBAS Y FLUJO
+
+	- Modularidad: Cada archivo .feature se enfoca en una funcionalidad específica (Login, Carrito, Checkout).
+	- Hooks: Uso de @Before para pre-condiciones, como asegurar el login antes de cada escenario de compra.
+	- Verificación Visual: Empleo del Playwright UI Mode para inspección de trazas y estados de la UI durante la ejecución.
+
+4. BENEFICIOS LOGRADOS
+
+	- Alta mantenibilidad: Si cambia la UI, solo se actualiza el Page Object afectado.
+	- Legibilidad: Documentación técnica y funcional unificada a través de Gherkin.
+	- Escalabilidad: Estructura preparada para añadir nuevos flujos E2E sin duplicar lógica.
