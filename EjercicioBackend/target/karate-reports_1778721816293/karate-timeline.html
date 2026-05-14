@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[1:8]","start":1778721801007,"end":1778721802641,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[1:8] 20:23:21.007-20:23:22.641 Obtener usuarios sin parametros"},{"id":2,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[2:14]","start":1778721802650,"end":1778721803088,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[2:14] 20:23:22.650-20:23:23.088 Obtener usuario con parametros"},{"id":3,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[3:22]","start":1778721803094,"end":1778721803522,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[3:22] 20:23:23.094-20:23:23.522 Validar informacion con parametros inexistentes"},{"id":4,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[4.1:39]","start":1778721803533,"end":1778721803943,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[4.1:39] 20:23:23.533-20:23:23.943 Validacion del campo email"},{"id":5,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[4.2:40]","start":1778721803948,"end":1778721804351,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[4.2:40] 20:23:23.948-20:23:24.351 Validacion del campo email"},{"id":6,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[4.3:41]","start":1778721804355,"end":1778721804768,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[4.3:41] 20:23:24.355-20:23:24.768 Validacion del campo email"},{"id":7,"group":1,"content":"src\/test\/resources\/Usuarios\/obtener-lista-users[5:43]","start":1778721804773,"end":1778721805172,"title":"src\/test\/resources\/Usuarios\/obtener-lista-users[5:43] 20:23:24.773-20:23:25.172 Validacion del campo administrador"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/test\/resources\/Usuarios\/eliminar-user[1:9]","start":1778731242181,"end":1778731244785,"title":"src\/test\/resources\/Usuarios\/eliminar-user[1:9] 23:00:42.181-23:00:44.785 Eliminar usuario con ID valido"},{"id":2,"group":1,"content":"src\/test\/resources\/Usuarios\/eliminar-user[2:17]","start":1778731244791,"end":1778731277244,"title":"src\/test\/resources\/Usuarios\/eliminar-user[2:17] 23:00:44.791-23:01:17.244 Validacion de registro eliminado","className":"failed"},{"id":3,"group":1,"content":"src\/test\/resources\/Usuarios\/eliminar-user[3:26]","start":1778731277274,"end":1778731278755,"title":"src\/test\/resources\/Usuarios\/eliminar-user[3:26] 23:01:17.274-23:01:18.755 Validar que no se realiza eliminacion con ID inexistente"},{"id":4,"group":1,"content":"src\/test\/resources\/Usuarios\/eliminar-user[4:33]","start":1778731278759,"end":1778731279982,"title":"src\/test\/resources\/Usuarios\/eliminar-user[4:33] 23:01:18.759-23:01:19.982 Validar que no se realiza eliminacion sin ID"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
