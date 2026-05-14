@@ -1,0 +1,18 @@
+{
+  "valido": {
+    "nome": "Fulano da Silva Update",
+    "password": "teste",
+    "administrador": "false"
+    },
+  "inexistente": {
+    "nome": "Fulano da Silva Update",
+    "password": "teste",
+    "administrador": "false"
+    },
+  "vacio": {
+    "nome": "",
+    "email": "",
+    "password": "",
+    "administrador": ""
+  }
+}

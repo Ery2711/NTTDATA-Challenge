@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.identify("82b61995-0957-4749-8b96-627484ee04e2",{name:"ery27"});
+    posthog.capture("report_feature",{karate_version:"1.2.0",karate_meta:null});
+  }
+});
+</script>
+  
+    <title>src.test.resources.Usuarios.obtener-lista-users</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">7</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2026-05-13 11:27:18 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:8]"><span>[1:8]</span> <span>Obtener usuarios sin parametros</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:14]"><span>[2:14]</span> <span>Obtener usuario con parametros</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:22]"><span>[3:22]</span> <span>Validar informacion con parametros inexistentes</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.1:39]"><span>[4.1:39]</span> <span>Validacion del campo email</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.2:40]"><span>[4.2:40]</span> <span>Validacion del campo email</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4.3:41]"><span>[4.3:41]</span> <span>Validacion del campo email</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:43]"><span>[5:43]</span> <span>Validacion del campo administrador</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/resources/Usuarios/obtener-lista-users.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Obtener lista de todos los usuarios</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:8]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:8]</span>
+                <span class="scenario-name">Obtener usuarios sin parametros</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>454</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:8]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:8]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref passed">9</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref passed">10</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref passed">11</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">448</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.11">23:27:15.416 request:
+1 &gt; GET https://serverest.dev/usuarios
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:15.862 response time in milliseconds: 445
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 3de83ca0261d2d90dee0672cc719e21d
+1 &lt; date: Thu, 14 May 2026 04:27:15 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 21516
+{
+    &quot;quantidade&quot;: 94,
+    &quot;usuarios&quot;: [
+        {
+            &quot;nome&quot;: &quot;Ana Luiza Monteiro Neto&quot;,
+            &quot;email&quot;: &quot;carolina.barreira@gmail.com&quot;,
+            &quot;password&quot;: &quot;frvf32akc0q4k1aebc&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;03M8J8D1sufwsAxm&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732004810@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0PE23ESY7zqQV1fl&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;fulano@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Srta. João Guilherme Ouriques&quot;,
+            &quot;email&quot;: &quot;silvia.paes@bol.com.br&quot;,
+            &quot;password&quot;: &quot;cb5bwon17wtg7&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;1aJMy4AtUwrWRPEP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727723036@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;2V3iBI9klq2IqAwT&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727040489@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;4Cd1DY0ZetL2LOqz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Dra. Letícia Banheira&quot;,
+            &quot;email&quot;: &quot;rafaela.castanho@gmail.com&quot;,
+            &quot;password&quot;: &quot;binnw3z6pjfdtz2&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;4EBOO3BGRft3iAQg&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778728764267@example.com&quot;,
+            &quot;_id&quot;: &quot;4JXUri27Xo3Ou9s1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Washington Geraldes Filho&quot;,
+            &quot;email&quot;: &quot;nicolas.cavalcanti@hotmail.com&quot;,
+            &quot;password&quot;: &quot;g58d0xoup&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;5XZGMqiPqqFeknDp&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Taki-teste&quot;,
+            &quot;email&quot;: &quot;takiteste@qa.com&quot;,
+            &quot;password&quot;: &quot;12345&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;6eJGyYnKmjD9ejdG&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778732820629@example.com&quot;,
+            &quot;_id&quot;: &quot;7CsZZzrVp3dMvthx&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Anna Gaylord IV&quot;,
+            &quot;email&quot;: &quot;Vivian.Bayer@gmail.com&quot;,
+            &quot;password&quot;: &quot;123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;7DY3vn9qCTxs5wkK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731277848@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;8LsdQaDuLXVlSe4v&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727308867@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;9gpgfkNPRSJmzF0H&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730883041@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;By1G2fXlwVyPfwdz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727035831@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ENkR6TyP9vKCQs6O&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Dr. Esther Ferraço&quot;,
+            &quot;email&quot;: &quot;joaofelipe.dapaz@bol.com.br&quot;,
+            &quot;password&quot;: &quot;ttu03g5pwmxie1i22&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;EyS1ZKJySm98rAkp&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Bento Laranjeira&quot;,
+            &quot;email&quot;: &quot;morgana.siqueira@yahoo.com&quot;,
+            &quot;password&quot;: &quot;qxtbfhreullyan&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;F9NtYJiSztxnSZQR&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730931308@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;FEFFNdp1rvO1ZuPx&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Larissa Caldeira Jr.&quot;,
+            &quot;email&quot;: &quot;thomas.dacosta@hotmail.com&quot;,
+            &quot;password&quot;: &quot;q9oz9zp71kn&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;FdZo2m9TvrbJPd3O&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778732822631@example.com&quot;,
+            &quot;_id&quot;: &quot;I2AQIWmk6VqD54mC&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730266909@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;JmcaLlz0PMaDBvka&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732824935@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;JzqZRDfvBw9JpKWO&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728744977@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;KB11bwo3gobb3plI&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Helena Castanheira&quot;,
+            &quot;email&quot;: &quot;manuela.dafronteira@hotmail.com&quot;,
+            &quot;password&quot;: &quot;p1jkip9am5aaq8km9&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;KZLbLqueG1shgmQq&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731364880@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;KpqzaeJ7yIsz1wZp&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728330194@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;MUhrF0wRS1yTKmM2&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Nicole Rezende&quot;,
+            &quot;email&quot;: &quot;melissa.matoso@yahoo.com&quot;,
+            &quot;password&quot;: &quot;ftnvdlss72vld&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;MnRRBHTIcWUdj0hk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731214028@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;MveZupI3lKfdMMlB&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727039103@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;N2hEE4TWS7f67tbR&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727586350@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;O5c28upWvLnqj2pz&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728499633@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;OBPB2TTVnHqqePPh&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728651941@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;OI9WJzJQrMZygCCi&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727962567@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;OMTFTsGr3qdJ5V1l&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732390186@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;OqmiZpiji7icNixq&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Nicolas Freitas&quot;,
+            &quot;email&quot;: &quot;luizotavio.damota@gmail.com&quot;,
+            &quot;password&quot;: &quot;nujuywrbsxt81ob21l&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;QUhRopB0xKksbycH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728763857@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;S6mqop21j2NHI45g&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728765097@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;SBLItBhRRsWQ4Ois&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732823483@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Svss9T6cpGhRgJOR&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727372734@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;TETyxAmL4ZutQ8yf&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731921243@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;TRxqVrcdMafy2aTy&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732829208@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;TdjVkufsXoJe5LnJ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732391524@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;UUtbSFgsDg2pbFYk&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731245327@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Uck7F3e8ZiXOGosL&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730419888@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;Uurp71rnn7EdV0CB&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731398389@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;VkIhecOJ1G7X8h0h&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778728498767@example.com&quot;,
+            &quot;_id&quot;: &quot;WHgr5WNzxmwkZHA9&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732821655@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;XCQt9E3mnnzEOSuv&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732794508@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;YhtKsdG5Mp797FRJ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731923524@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ZIntTqVYIWsfhTga&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728767736@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;aCRquocEBPpdGZK1&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727754548@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;b0TrvpSsG984Rfet&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732833063@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;bLtTClj9cOlLKq1M&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Júlia da Veiga Neto&quot;,
+            &quot;email&quot;: &quot;maria.limeira@gmail.com&quot;,
+            &quot;password&quot;: &quot;hrsbnork140xji9&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;dF7RQn9lcQEizmKP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727960004@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;dI0PbGhGtKuprrvQ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Srta. Félix da Madureira&quot;,
+            &quot;email&quot;: &quot;mariafernanda.filgueira@yahoo.com&quot;,
+            &quot;password&quot;: &quot;yt7xf6acxp6uv2yuith&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;dcERxS9YHzmWQj1I&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778727959128@example.com&quot;,
+            &quot;_id&quot;: &quot;eZPcMA7h7de6oEnP&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728182549@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ebD4mG0DvtmI0S9n&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730072930@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;f711oWspo8ywn19s&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731279185@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;gF1BGuKhDZDqlO77&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732834271@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;gqGfTPfdfAIdGbap&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730964624@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;h1wC1iyOM8iZPkdG&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730963400@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;hLyXZMuWnrmUzsOK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Enzo Thiago Arantes&quot;,
+            &quot;email&quot;: &quot;bento.quaresma@bol.com.br&quot;,
+            &quot;password&quot;: &quot;bcl5xzmg&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;hfuz7FJywdGFsT52&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732006194@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;iOda3QV2fCje1gvb&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Enzo Mangueira&quot;,
+            &quot;email&quot;: &quot;andre.dabandeira@gmail.com&quot;,
+            &quot;password&quot;: &quot;au8kq1gyo&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;iZTBrRwSRiGvgbb6&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser&quot;,
+            &quot;email&quot;: &quot;username@domain.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;jQUl9I3mv7sbhILd&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778728762992@example.com&quot;,
+            &quot;_id&quot;: &quot;jfOSGdwMnWu8ZlTO&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728498280@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;kZ5rkGF1lLMN9K8w&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727497044@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mPT4LCWPBQQIuv0a&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Paulo Pereira&quot;,
+            &quot;email&quot;: &quot;helio.assumpcao@hotmail.com&quot;,
+            &quot;password&quot;: &quot;rzrndwx7ai2b&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;mojkHLsSrWNCLQpV&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730884408@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;mvppAg03hyeX40As&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730418419@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;ns0KgbC0DNqYmunf&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Dra. Kauê Santana&quot;,
+            &quot;email&quot;: &quot;tomas.sais@yahoo.com&quot;,
+            &quot;password&quot;: &quot;t86gv5631lo&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;nt7FHDPyXEJn6zpm&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732795749@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;oGZKvxUZoBxNffuF&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778728766347@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;oaXrPlwlwUQtyrXc&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730872133@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;oiwlrrtS8o4PHs84&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727870586@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;pV3hLSk9Ud6XTmry&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727828962@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;qHfeZF4m7TYJiw0S&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Sr. Yasmin Ramalho&quot;,
+            &quot;email&quot;: &quot;olivia.macedo@gmail.com&quot;,
+            &quot;password&quot;: &quot;g2qbelkhzsa5kmjo2bf&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;sSDYF3vd0s32rZnQ&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731397137@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sSuI3ffjvXxEFaVu&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732826335@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sWIiRN6Iu9oCHvGe&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727189025@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;sZQEeVvG7V6JPYA0&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732357816@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;t9brSMejGMfVFTLE&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731174493@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tCoH0Ng0KJMpR2As&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727961300@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;timsMOH5CIkxetvy&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778727037653@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;tp7rFmlgUqcaHDW7&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778731922169@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;uEhFtDYICnj2lulr&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778730268737@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vdMY0u0t5NOUcvLH&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;TestUser010116&quot;,
+            &quot;email&quot;: &quot;test_1778732003869@example.com&quot;,
+            &quot;password&quot;: &quot;password123&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;vjPl955XKCcpJmuK&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Augusto Martim&quot;,
+            &quot;email&quot;: &quot;nicolas.custodio@bol.com.br&quot;,
+            &quot;password&quot;: &quot;44zajzgw9jf4837&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;wZdmZbzqcZjJzsN8&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Augusto de Oliveira&quot;,
+            &quot;email&quot;: &quot;pedrolucas.fontes@hotmail.com&quot;,
+            &quot;password&quot;: &quot;7o9shg1viy&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;_id&quot;: &quot;xGRvaxr3EhfVUAHm&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Félix Novaes&quot;,
+            &quot;email&quot;: &quot;rafael.carvalho@bol.com.br&quot;,
+            &quot;password&quot;: &quot;urpbf9ul68261&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;xHcf9ocrVzC9T6VD&quot;
+        },
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva Update&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;false&quot;,
+            &quot;email&quot;: &quot;test_1778728330615@example.com&quot;,
+            &quot;_id&quot;: &quot;yDg7KGBl4iFcIrSU&quot;
+        }
+    ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:14]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:14]</span>
+                <span class="scenario-name">Obtener usuario con parametros</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>400</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:14]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:14]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params parameters.valido</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">395</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">23:27:15.872 request:
+1 &gt; GET https://serverest.dev/usuarios?password=teste&amp;administrador=true&amp;nome=Fulano+da+Silva&amp;_id=0uxuPY0cbmQhpEz1&amp;email=fulano%40qa.com
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:16.265 response time in milliseconds: 393
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 033d6b23fd7f0cd978a06bc8dc189de4
+1 &lt; date: Thu, 14 May 2026 04:27:16 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 253
+{
+    &quot;quantidade&quot;: 1,
+    &quot;usuarios&quot;: [
+        {
+            &quot;nome&quot;: &quot;Fulano da Silva&quot;,
+            &quot;email&quot;: &quot;fulano@qa.com&quot;,
+            &quot;password&quot;: &quot;teste&quot;,
+            &quot;administrador&quot;: &quot;true&quot;,
+            &quot;_id&quot;: &quot;0uxuPY0cbmQhpEz1&quot;
+        }
+    ]
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.usuarios[0] == parameters.valido</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:22]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:22]</span>
+                <span class="scenario-name">Validar informacion con parametros inexistentes</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>480</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:22]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:22]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params parameters.inexistente</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">477</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">23:27:16.272 request:
+1 &gt; GET https://serverest.dev/usuarios?password=djsakdhsadhas&amp;administrador=false&amp;nome=dbsajdbsajda&amp;_id=kdsakdsao&amp;email=dsadsadasda%40ewvgwwggwwqe.com
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:16.748 response time in milliseconds: 476
+1 &lt; 200
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: a9cb7824f9a47b3788dce733ee5987c0
+1 &lt; date: Thu, 14 May 2026 04:27:16 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 43
+{
+    &quot;quantidade&quot;: 0,
+    &quot;usuarios&quot;: []
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.quantidade == 0</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.usuarios == []</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.1:39]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.1:39]</span>
+                <span class="scenario-name">Validacion del campo email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>400</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.1:39]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.1:39]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { email: &quot;usernameinexistentdomain.com&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">398</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.35">23:27:16.754 request:
+1 &gt; GET https://serverest.dev/usuarios?email=usernameinexistentdomain.com
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:17.151 response time in milliseconds: 397
+1 &lt; 400
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: aeb7c76e9756664f2d31cfce6e44c6a7
+1 &lt; date: Thu, 14 May 2026 04:27:17 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 50
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.2:40]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.2:40]</span>
+                <span class="scenario-name">Validacion del campo email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>404</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.2:40]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.2:40]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { email: &quot;usernameunexists@domaincom&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">403</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="2.35">23:27:17.156 request:
+1 &gt; GET https://serverest.dev/usuarios?email=usernameunexists%40domaincom
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:17.558 response time in milliseconds: 402
+1 &lt; 400
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 6c6bc813ea195eb2ea2dfcf696c035ca
+1 &lt; date: Thu, 14 May 2026 04:27:17 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 50
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="2.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4.3:41]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4.3:41]</span>
+                <span class="scenario-name">Validacion del campo email</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>484</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4.3:41]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4.3:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.3:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4.3:41]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { email: &quot;usermaneunexistsdomaincom&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">482</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="3.35">23:27:17.563 request:
+1 &gt; GET https://serverest.dev/usuarios?email=usermaneunexistsdomaincom
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:18.044 response time in milliseconds: 481
+1 &lt; 400
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 1a541fd3c3203d827f9afdca9b156800
+1 &lt; date: Thu, 14 May 2026 04:27:18 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 50
+{
+    &quot;email&quot;: &quot;email deve ser um email válido&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="3.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:43]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:43]</span>
+                <span class="scenario-name">Validacion del campo administrador</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>407</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:43]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>karate.configure(&#39;ssl&#39;, true);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def baseUrl = &quot;https://serverest.dev&quot;;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:43]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def parameters = read(&#39;../Support/usuario-get-params.json&#39;);</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.44">
+      <div class="step-ref passed">44</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url baseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &quot;/usuarios&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>params { administrador: &quot;abcde&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">405</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.47">23:27:18.049 request:
+1 &gt; GET https://serverest.dev/usuarios?administrador=abcde
+1 &gt; Host: serverest.dev
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.30)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+23:27:18.453 response time in milliseconds: 403
+1 &lt; 400
+1 &lt; access-control-allow-origin: *
+1 &lt; x-dns-prefetch-control: off
+1 &lt; x-frame-options: SAMEORIGIN
+1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
+1 &lt; x-download-options: noopen
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; content-type: application/json; charset=utf-8
+1 &lt; x-cloud-trace-context: 65a77adb468446a60f36f946b698fa69
+1 &lt; date: Thu, 14 May 2026 04:27:18 GMT
+1 &lt; server: Google Frontend
+1 &lt; Content-Length: 67
+{
+    &quot;administrador&quot;: &quot;administrador deve ser &#39;true&#39; ou &#39;false&#39;&quot;
+}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.administrador == &quot;administrador deve ser &#39;true&#39; ou &#39;false&#39;&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
