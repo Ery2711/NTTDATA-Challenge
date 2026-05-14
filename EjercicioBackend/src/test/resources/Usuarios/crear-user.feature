@@ -1,7 +1,5 @@
 Feature: Crear nuevo usuario
   Background: Configuracion inicial
-    * karate.configure('ssl', true);
-    * def baseUrl = "https://serverest.dev";
     * def requestUser = read('../Support/usuario-post.json');
     * def tempEmail = 'test_' + java.lang.System.currentTimeMillis() + '@example.com'
 

@@ -1,9 +1,6 @@
 Feature: Eliminar usuarios
 
   Background:
-    * karate.configure('ssl', true);
-    * karate.configure('retry', { count: 10, interval: 3000 });
-    * def baseUrl = "https://serverest.dev";
     * def infoUsuario = call read('crear-user.feature')
 
   Scenario: Eliminacion de un usuario

@@ -1,8 +1,6 @@
 Feature: Obtener lista de todos los usuarios
 
   Background:
-    * karate.configure('ssl', true);
-    * def baseUrl = "https://serverest.dev";
     * def infoUsuario = call read('crear-user.feature')
     * def infoUsuarioEliminado = call read('eliminar-user.feature')
 

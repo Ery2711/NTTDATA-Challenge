@@ -1,8 +1,6 @@
 Feature: Actualizar usuario existente
 
   Background:
-    * karate.configure('ssl', true);
-    * def baseUrl = "https://serverest.dev";
     * def infoUsuario = call read('crear-user.feature')
     * def updateUser = read('../Support/usuario-update.json');
     * def tempEmail = 'test_' + java.lang.System.currentTimeMillis() + '@example.com'

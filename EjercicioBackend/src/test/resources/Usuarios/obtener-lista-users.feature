@@ -1,8 +1,6 @@
 Feature: Obtener lista de todos los usuarios
 
   Background:
-    * karate.configure('ssl', true);
-    * def baseUrl = "https://serverest.dev";
     * def parameters = read('../Support/usuario-get-params.json');
 
   Scenario: Obtener usuarios sin parametros
