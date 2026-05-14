@@ -16,7 +16,7 @@ test.describe('Validacion de compras', () => {
     await When('se hace click al carrito de compras', null, { page }); 
     await And('se verifica los productos seleccionados', null, { page }); 
     await And('se hace click en el boton Remove de un producto', null, { page }); 
-    await Then('se actualiza lista del carrito'); 
+    await Then('se actualiza lista del carrito', null, { page }); 
   });
 
   test.describe('Verificar campos requeridos de informacion de usuario', () => {

@@ -3,82 +3,82 @@ import { test } from "playwright-bdd";
 
 test.describe('Login de usuario en SauceDemo', () => {
 
-  test('Inicio de sesion con unicas credenciales validas', { tag: ['@login_requerido'] }, async ({ Given, When, Then, And }) => { 
-    await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-    await When('agrega usuario "standard_user"'); 
-    await And('agrega password "secret_sauce"'); 
-    await And('hace click al boton de Login'); 
-    await Then('ingresa satisfactoriamente'); 
+  test('Inicio de sesion con unicas credenciales validas', { tag: ['@login_requerido'] }, async ({ Given, When, Then, And, page }) => { 
+    await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+    await When('agrega usuario "standard_user"', null, { page }); 
+    await And('agrega password "secret_sauce"', null, { page }); 
+    await And('hace click al boton de Login', null, { page }); 
+    await Then('ingresa satisfactoriamente', null, { page }); 
   });
 
   test.describe('Inicio de sesion con multiples credenciales', () => {
 
-    test('Example #1', async ({ Given, When, Then, And }) => { 
-      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-      await When('agrega usuario "problem_user"'); 
-      await And('agrega password "secret_sauce"'); 
-      await And('hace click al boton de Login'); 
-      await Then('ingresa satisfactoriamente'); 
+    test('Example #1', async ({ Given, When, Then, And, page }) => { 
+      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+      await When('agrega usuario "problem_user"', null, { page }); 
+      await And('agrega password "secret_sauce"', null, { page }); 
+      await And('hace click al boton de Login', null, { page }); 
+      await Then('ingresa satisfactoriamente', null, { page }); 
     });
 
-    test('Example #2', async ({ Given, When, Then, And }) => { 
-      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-      await When('agrega usuario "error_user"'); 
-      await And('agrega password "secret_sauce"'); 
-      await And('hace click al boton de Login'); 
-      await Then('ingresa satisfactoriamente'); 
+    test('Example #2', async ({ Given, When, Then, And, page }) => { 
+      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+      await When('agrega usuario "error_user"', null, { page }); 
+      await And('agrega password "secret_sauce"', null, { page }); 
+      await And('hace click al boton de Login', null, { page }); 
+      await Then('ingresa satisfactoriamente', null, { page }); 
     });
 
-    test('Example #3', async ({ Given, When, Then, And }) => { 
-      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-      await When('agrega usuario "visual_user"'); 
-      await And('agrega password "secret_sauce"'); 
-      await And('hace click al boton de Login'); 
-      await Then('ingresa satisfactoriamente'); 
+    test('Example #3', async ({ Given, When, Then, And, page }) => { 
+      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+      await When('agrega usuario "visual_user"', null, { page }); 
+      await And('agrega password "secret_sauce"', null, { page }); 
+      await And('hace click al boton de Login', null, { page }); 
+      await Then('ingresa satisfactoriamente', null, { page }); 
     });
 
   });
 
-  test('Inicio de sesion con credenciales bloqueadas', async ({ Given, When, Then, And }) => { 
-    await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-    await When('agrega usuario "locked_out_user"'); 
-    await And('agrega password "secret_sauce"'); 
-    await And('hace click al boton de Login'); 
-    await Then('mensaje de error es desplegado: "Epic sadface: Sorry, this user has been locked out."'); 
+  test('Inicio de sesion con credenciales bloqueadas', async ({ Given, When, Then, And, page }) => { 
+    await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+    await When('agrega usuario "locked_out_user"', null, { page }); 
+    await And('agrega password "secret_sauce"', null, { page }); 
+    await And('hace click al boton de Login', null, { page }); 
+    await Then('mensaje de error es desplegado: "Epic sadface: Sorry, this user has been locked out."', null, { page }); 
   });
 
   test.describe('Inicio de sesion con credenciales invalidas', () => {
 
-    test('Example #1', async ({ Given, When, Then, And }) => { 
-      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-      await When('agrega usuario "standard_user"'); 
-      await And('agrega password "abcde"'); 
-      await And('hace click al boton de Login'); 
-      await Then('mensaje de error es desplegado: "Epic sadface: Username and password do not match any user in this service"'); 
+    test('Example #1', async ({ Given, When, Then, And, page }) => { 
+      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+      await When('agrega usuario "standard_user"', null, { page }); 
+      await And('agrega password "abcde"', null, { page }); 
+      await And('hace click al boton de Login', null, { page }); 
+      await Then('mensaje de error es desplegado: "Epic sadface: Username and password do not match any user in this service"', null, { page }); 
     });
 
-    test('Example #2', async ({ Given, When, Then, And }) => { 
-      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-      await When('agrega usuario "abcde"'); 
-      await And('agrega password "secret_sauce"'); 
-      await And('hace click al boton de Login'); 
-      await Then('mensaje de error es desplegado: "Epic sadface: Username and password do not match any user in this service"'); 
+    test('Example #2', async ({ Given, When, Then, And, page }) => { 
+      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+      await When('agrega usuario "abcde"', null, { page }); 
+      await And('agrega password "secret_sauce"', null, { page }); 
+      await And('hace click al boton de Login', null, { page }); 
+      await Then('mensaje de error es desplegado: "Epic sadface: Username and password do not match any user in this service"', null, { page }); 
     });
 
-    test('Example #3', async ({ Given, When, Then, And }) => { 
-      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-      await When('agrega usuario "abcde"'); 
-      await And('agrega password "abcde"'); 
-      await And('hace click al boton de Login'); 
-      await Then('mensaje de error es desplegado: "Epic sadface: Username and password do not match any user in this service"'); 
+    test('Example #3', async ({ Given, When, Then, And, page }) => { 
+      await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+      await When('agrega usuario "abcde"', null, { page }); 
+      await And('agrega password "abcde"', null, { page }); 
+      await And('hace click al boton de Login', null, { page }); 
+      await Then('mensaje de error es desplegado: "Epic sadface: Username and password do not match any user in this service"', null, { page }); 
     });
 
   });
 
-  test('Inicio de sesion sin credenciales', async ({ Given, When, Then }) => { 
-    await Given('usuario ingresa a la pagina "https://www.saucedemo.com"'); 
-    await When('hace click al boton de Login'); 
-    await Then('mensaje de error es desplegado: "Epic sadface: Username is required"'); 
+  test('Inicio de sesion sin credenciales', async ({ Given, When, Then, page }) => { 
+    await Given('usuario ingresa a la pagina "https://www.saucedemo.com"', null, { page }); 
+    await When('hace click al boton de Login', null, { page }); 
+    await Then('mensaje de error es desplegado: "Epic sadface: Username is required"', null, { page }); 
   });
 
 });

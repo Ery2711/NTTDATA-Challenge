@@ -3,33 +3,33 @@ import { test } from "playwright-bdd";
 
 test.describe('Adicion y extracción de productos en SauceDemo', () => {
 
-  test('Agregar un producto al carrito', { tag: ['@Before(', '@login_requerido)'] }, async ({ Given, When, Then, And }) => { 
-    await Given('usuario se ha logueado correctamente'); 
-    await And('pagina Products es desplegada'); 
-    await When('se agrega un solo producto'); 
-    await Then('el contador de items del carrito incrementa'); 
+  test('Agregar un producto al carrito', { tag: ['@Before(', '@login_requerido)'] }, async ({ Given, When, Then, And, page }) => { 
+    await Given('usuario se ha logueado correctamente', null, { page }); 
+    await And('pagina Products es desplegada', null, { page }); 
+    await When('se agrega un solo producto', null, { page }); 
+    await Then('el contador de items del carrito incrementa', null, { page }); 
   });
 
-  test('Agregar mas de un producto al carrito', async ({ Given, When, Then, And }) => { 
-    await Given('usuario se ha logueado correctamente'); 
-    await And('pagina Products es desplegada'); 
-    await When('se agrega multiples productos'); 
-    await Then('el contador de items del carrito incrementa'); 
+  test('Agregar mas de un producto al carrito', async ({ Given, When, Then, And, page }) => { 
+    await Given('usuario se ha logueado correctamente', null, { page }); 
+    await And('pagina Products es desplegada', null, { page }); 
+    await When('se agrega multiples productos', null, { page }); 
+    await Then('el contador de items del carrito incrementa', null, { page }); 
   });
 
-  test('Quitar productos del carrito', async ({ Given, When, Then, And }) => { 
-    await Given('usuario se ha logueado correctamente'); 
-    await And('pagina Products es desplegada'); 
-    await When('se agrega multiples productos'); 
-    await And('se retiran algunos productos del carrito'); 
-    await Then('el contador de items del carrito disminuye'); 
+  test('Quitar productos del carrito', async ({ Given, When, Then, And, page }) => { 
+    await Given('usuario se ha logueado correctamente', null, { page }); 
+    await And('pagina Products es desplegada', null, { page }); 
+    await When('se agrega multiples productos', null, { page }); 
+    await And('se retiran algunos productos del carrito', null, { page }); 
+    await Then('el contador de items del carrito disminuye', null, { page }); 
   });
 
-  test('Quitar todos los productos del carrito', async ({ Given, When, Then, And }) => { 
-    await Given('usuario se ha logueado correctamente'); 
-    await And('pagina Products es desplegada'); 
-    await When('se agrega y retira misma cantidad de productos'); 
-    await Then('el contador de items del carrito desaparece'); 
+  test('Quitar todos los productos del carrito', async ({ Given, When, Then, And, page }) => { 
+    await Given('usuario se ha logueado correctamente', null, { page }); 
+    await And('pagina Products es desplegada', null, { page }); 
+    await When('se agrega y retira misma cantidad de productos', null, { page }); 
+    await Then('el contador de items del carrito desaparece', null, { page }); 
   });
 
 });
