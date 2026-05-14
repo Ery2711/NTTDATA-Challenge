@@ -2,7 +2,6 @@ Feature: Obtener lista de todos los usuarios
 
   Background:
     * def infoUsuario = call read('crear-user.feature')
-    * def infoUsuarioEliminado = call read('eliminar-user.feature')
 
   Scenario: Obtener usuario por id valido
     Given url baseUrl
